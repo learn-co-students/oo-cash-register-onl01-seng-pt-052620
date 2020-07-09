@@ -1,9 +1,9 @@
 class CashRegister
   attr_accessor :discount, :purchases, :total, :transaction
 
-  def initialize(discount=nil)
-    self.total = 0
-    self.discount = discount if discount != nil
+  def initialize(discount=0)
+    @total = 0
+    @discount = discount
     self.purchases = []
   end
 
